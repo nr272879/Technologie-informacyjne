@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{csvsimple}
+\usepackage{longtable}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{textcomp}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+
+
+\title{Spadek swobodny}
+\author{Kamila Grońska}
+\date{December 2022}
+
+\begin{document}
+\maketitle
+\section{Wprowadzenie teoretyczne}
+\begin{center}
+\begin{equation}
+ h(t) = h_o-{gt^2\over 2}   
+\end{equation}
+\end{center}
+
+\section{Przebieg eksperymentu }
+\textit{Jak widać na rysunku\ref{fig:Schemat doświadczenia}}
+
+
+\begin{figure}[h]
+\begin{center}
+    
+\includegraphics[width=0.4\textwidth]{swobodny-spadek-przyspieszenie-ziemskie2.png}
+\caption{Schemat doświadczenia}
+\label{fig:Schemat doświadczenia}
+\end{center}
+\end{figure}
+
+\newpage
+\section{Wyniki pomiarów}
+
+
+\csvautolongtable{tabela.csv}
+
+
+\section{Wnioski}
+
+\end{document}
